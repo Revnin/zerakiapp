@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Dashboard - Zeraki</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 🌟 Welcome Banner -->
+  <div class="welcome-banner">
+    <h2 id="welcomeMessage">👋 Welcome, Teacher</h2>
+  </div>
+
+  <!-- 📋 Mark Entry Card -->
+  <div class="card">
+    <h3 style="margin-top: 0;">📑 Enter Student Marks</h3>
+
+    <label for="markSubject"><strong>Subject:</strong></label>
+    <input type="text" id="markSubject" disabled />
+
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ADM No</th>
+          <th>Class</th>
+          <th>Stream</th>
+          <th>Mark</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 🔌 Firebase + JS -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/teacher-dashboard.js"></script>
+
+</body>
+</html>

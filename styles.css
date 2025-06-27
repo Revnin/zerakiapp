@@ -1,0 +1,108 @@
+/* ---------- Base Layout ---------- */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ---------- Welcome + Report Banner ---------- */
+.welcome-banner, .report-header {
+  background-color: #eaf3fb;
+  color: #003366;
+  padding: 16px 24px;
+  text-align: center;
+  border-bottom: 2px solid #0054a6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 20px;
+}
+
+.welcome-banner h2, .report-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ---------- Main Card ---------- */
+.card, .report-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #003366;
+  color: #fff;
+}
+
+table tr:hover {
+  background-color: #f1f9ff;
+}
+
+/* ---------- Inputs ---------- */
+input[type="text"], input[type="number"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0054a6;
+}
+
+/* ---------- Report Summary ---------- */
+.summary {
+  margin-top: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 600px) {
+  .card, .report-card {
+    padding: 16px;
+    margin: 10px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .welcome-banner h2, .report-header h2 {
+    font-size: 20px;
+  }
+}

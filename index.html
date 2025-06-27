@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zeraki School Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --main-blue: #003366;
+      --light-blue: #f2f7fc;
+      --accent-blue: #0054a6;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--light-blue);
+      color: var(--main-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: var(--white);
+      padding: 48px 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .container h1 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .container p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: var(--main-blue);
+      color: var(--white);
+      border: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px 0;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-blue);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 32px 20px;
+      }
+
+      .container h1 {
+        font-size: 22px;
+      }
+
+      .btn {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="img/school-icon.png" alt="School Logo" class="logo" />
+    <h1>Welcome to Zeraki Portal</h1>
+    <p>Select your role to continue:</p>
+    <button class="btn" onclick="window.location.href='teacher-login.html'">👩‍🏫 Teacher Login</button>
+    <button class="btn" onclick="window.location.href='student-login.html'">🎓 Student Login</button>
+    <div class="footer">© 2025 Kitui School • Zeraki Clone</div>
+  </div>
+</body>
+</html>
